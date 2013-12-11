@@ -4,10 +4,12 @@ import os
 
 import sys
 try:
-    import rlcompleter, readline
-    readline.parse_and_bind('tab:complete')
+    import readline
 except:
-    pass
+    print "Module readline not available."
+else:
+    import rlcompleter
+    readline.parse_and_bind("tab: complete")
 
 
 def main(argv=None, **kwargs):
