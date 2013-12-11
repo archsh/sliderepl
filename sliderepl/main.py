@@ -3,8 +3,12 @@ from argparse import ArgumentParser
 import os
 
 import sys
-import rlcompleter, readline
-readline.parse_and_bind('tab:complete')
+try:
+    import rlcompleter, readline
+    readline.parse_and_bind('tab:complete')
+except:
+    pass
+
 
 def main(argv=None, **kwargs):
 

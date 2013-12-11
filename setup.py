@@ -13,7 +13,7 @@ except ImportError:
     requires.append('argparse')
 
 setup(name='sliderepl',
-      version="1.1.1",
+      version="1.1.2",
       description="Runs a python script as a series of slides for presentation.",
       long_description=open(readme).read(),
       classifiers=[
